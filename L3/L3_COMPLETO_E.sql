@@ -1,10 +1,3 @@
-L3 COMPLETO.txt
-El mes pasado
-23 Sept
-
-Kevin Ortiz ha subido un elemento
-Texto
-L3 COMPLETO.txt
 -------------------------------------------------------------------------
 --P1 (2pts)
 /*
@@ -178,7 +171,7 @@ order by 2 desc, 3 desc;
 select * from ge_evento a,ge_persona_evento b
 where b.id_evento = a.id_evento;
 --P3
-select c.nro_documento, c.apellidos ||' '||c.nombres "APELLIDOS Y NOMBRES", a.nombre, b.asistencia
+select c.nro_documento, c.apellidos || ' ' ||    c.nombres "APELLIDOS Y NOMBRES", a.nombre, b.asistencia
 from ge_evento a , ge_persona_evento b, ge_persona c
 where b.id_evento = a.id_evento and c.id_persona = b.id_persona
 and c.nombres in (select x.nombres
