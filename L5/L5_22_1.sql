@@ -156,7 +156,7 @@ INSERT INTO ce_pedido_detalle VALUES (4,1,4,1,2500,'A');
 SELECT * FROM ce_pedido WHERE id_pedido=1;
 /
 --P5
-/*Trigger que actualiza el subtotal de ce_pedido_detalle a
+/*Trigger que actualiza el subtotal de ce_pedido_detalle
   cuando se actualiza el precio de un producto*/
 CREATE OR REPLACE TRIGGER actualizar_subtotal
 AFTER UPDATE ON ce_producto
